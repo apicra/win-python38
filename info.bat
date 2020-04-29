@@ -1,1 +1,8 @@
-echo "info about software reload.bat\n remove.bat \n status.bat \n update.bat \n version.bat"
+@echo off
+if not exist *.bat (
+echo This directory contains no *.bat files.
+) else (
+   echo List of commands:
+   echo.
+   dir /b *.bat
+   )
