@@ -19,3 +19,18 @@ python
 + python.install.bat
 + python.remove.bat
 + python.update.bat
+
+## TODO
++ TEST SHELL SCRIPTS on gitlab
++ check if python is installed
+
+
+
+## Operator | Description
+
+EQU      | equal to
+NEQ      | not equal to
+LSS      | less than
+LEQ      | less than or equal to
+GTR      | greater than
+GEQ      | greater than or equal to
