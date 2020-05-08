@@ -8,6 +8,15 @@ set PYTHONPATH=%PYTHONPATH%;C:\python382
 set LOG=py-log.txt
 set INSTALLDIR=C:\python382\
 
+@echo off
+echo I will install PHP on Windows system ...
+WHERE py
+IF %ERRORLEVEL% EQU 0 (
+    echo PYTHON is installed, the installation is stopped!
+    pause
+    exit
+)
+
 :: https://docs.python.org/3/using/windows.html#the-full-installer
 %FILENAME% /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
 ::msiexec.exe /i %FILENAME% INSTALLDIR=%INSTALLDIR% /qn /L*v %LOG%

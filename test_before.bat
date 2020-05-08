@@ -1,8 +1,6 @@
 @echo off
 git --version
-IF %ERRORLEVEL% NEQ 0 (
-::    echo "NOT"
-) else (
+IF %ERRORLEVEL% EQU 0 (
     echo "YES"
 )
 ::echo %ERRORLEVEL%
